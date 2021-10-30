@@ -178,13 +178,13 @@ def game():
     # 若 px 為負值則設定為 tc -1, 表示 tc 為 x 方向 limit
     # x 座標方向的穿牆設定
     if px < 0:
-        px = tc-1
-    if px > tc-1:
+        px = tc
+    if px > tc:
         px = 0
     # y 座標方向的穿牆設定
     if py < 0:
-        py = tc-1
-    if py > tc-1:
+        py = tc
+    if py > tc:
         py = 0
     ctx.fillStyle = "black"
     # 畫布填入黑色
@@ -240,7 +240,7 @@ def key_push(evt):
         xv = 1
         yv = 0
     # 40 is down arrow key
-    # 77 is m key
+    # 75 is k key
     elif key == 75 and not paused:
         xv = 0
         yv = 1
@@ -254,7 +254,7 @@ def key_push(evt):
         paused = not paused
   
 def show_instructions(evt):
-        window.alert("keys to control: i=up, m=down, j=left, l=right, p=pause")
+        window.alert("keys to control: i=up, k=down, j=left, l=right, p=pause")
       
 # 利用 html 建立 canvas 超文件物件
 canvas = html.CANVAS(width = 600, height = 600)
