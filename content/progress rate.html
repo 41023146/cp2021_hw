@@ -2,7 +2,7 @@
         <head>
         <title>cp2021 homework site</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H1">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -139,53 +139,30 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">About << <a href='About.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1<br /><h1>Hybrid</h1>
-<p>將 start_ipv4.bat 與部分檔案放在 USB 隨身碟, 使用 C 槽的 Python395 與 Portablegit.</p>
-<p>在不更改 pip.exe 中 Python.exe 的絕對路徑情況下, 必須透過 python -m pip list (列出模組) 或 python -m pip install (安裝模組)</p>
-<p>start_ipv4.bat, data, tmp, wscite 與 home_ipv4, home_ipv6 放在隨身碟:</p>
-<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">@echo off
-set Disk=y
-subst %Disk%: "data"
-
-set Local=C:\2021_cadlab_portable\data
-
-%Disk%:
-
-set HomePath=%Disk%:\home_ipv4
-set HomeDrive=%Disk%:\home_ipv4
-set Home=%Disk%:\home_ipv4
-set USERPROFILE=%Disk%:\home_ipv4
-
-REM 將系統 Python 程式的 io 設為 utf-8
-set PYTHONIOENCODING="utf-8"
-
-set PYTHONPATH=%Local%\Python395\DLLs;%Local%\Python395\Lib;%Local%\Python395\Lib\site-packages;
-
-set PYTHONHOME=%Local%\Python395
-
-REM 使用 putty 設定 git ssh 連線
-set GIT_SSH=%Disk%:\putty\plink.exe
-
-REM 設定跟 Python 有關的命令搜尋路徑
-set path_python=%Local%\Python395;%Local%\Python395\Scripts;
-set path_portablegit=%Local%\portablegit_2.31.1\bin;
-
-path=%Disk%:;%path_python%;%path_portablegit%;%path%;
-
-REM ref: https://drive.google.com/file/d/1S0XYN-1MKxo0KFYxs0pFTcTrr8NL4n1b/view
-
-REGEDIT.EXE /S %Disk%:\putty_github_com.reg;
-
-start /MIN cmd.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-start /MIN cmd.exe
-
-start /MIN %Disk%:\wScite\SciTE.exe
-start /MIN %Disk%:\wScite\SciTE.exe
-
-Exit</pre>
-<p><br/><br/>Hybrid</p><br />About << <a href='About.html'>Previous</a> <a href='HW1.html'>Next</a> >> HW1</div>
+    <div id="tipue_search_content">game << <a href='game.html'>Previous</a> <br /><h1>progress rate</h1>
+<p></p>
+<p><strong>week 1</strong></p>
+<p>1.熟悉課程網頁<span> </span><a href="https://mde.tw/#/">mde.tw</a></p>
+<p>2.建立github帳號</p>
+<p><strong>week 2</strong></p>
+<p>1.建立可攜系統(將ipv6貼到ipv4在替換home_ipv4,ipv4還是開不了)=&gt;沒save</p>
+<p>2建立github倉儲(使用Use this template抓取作業網站模板)</p>
+<p><strong>week 3</strong></p>
+<p>1.用課程網站練習hw1_1並成功執行</p>
+<p><span>2.將遠端github倉儲用git克隆到近端</span></p>
+<p><strong>week 4</strong></p>
+<p><span>1.嘗試 hw1_2 失敗(按鈕有出來但方塊沒動)=&gt;doc["power"].bind("click", gametion)階層放錯</span></p>
+<p><span>2.將hw1內容加入gist</span></p>
+<p><strong>week 5</strong></p>
+<p>1.在近端用cms開啟動態網站,嘗試加入run頁面 失敗(沒有編輯區)</p>
+<p>2.詢問老師run頁面失敗原因=&gt;得知是動態與靜態的區別</p>
+<p><strong>week 6</strong></p>
+<p>1.將近端更新用git指令和token堆送到github</p>
+<p>2.因為是照著老師作的不知道原理=&gt;學習<a href="https://w3c.hexschool.com/git/cfdbd310">git</a>指令</p>
+<p><strong>week 7</strong></p>
+<p>1.嘗試運用ssh來推送(推送失敗)=&gt;找到前一屆ssh的<a href="http://mde.tw/cd2021/content/SSH 了沒.html">教學</a></p>
+<p>   =&gt;發現是在運用putty.exe連線時沒按save(第二次了<img alt="cry" src="./../cmsimde/static/tinymce4/tinymce/plugins/emoticons/img/smiley-cry.gif"/>)</p>
+<p></p><br />game << <a href='game.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
