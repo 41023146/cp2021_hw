@@ -1,0 +1,112 @@
+甚麼情況下會需要使用 Pull Requests (拉回請求)?
+
+如何利用 Python 啟動一個臨時的 WWW 伺服器 (World Wide Web)?
+
+瀏覽器為 WWW (全球資訊網) 的 client 端. 能以 Browser (瀏覽器) 連結的伺服器, 就稱為 WWW Server (全球資訊網伺服器).  所謂伺服 (serving), 就是提供服務,  所以 WWW Server 就是專門透過 http(s) 協定, 讓伺服器的內容可以讓瀏覽器擷取.
+
+cmsimde 網站的主要內容分別在 config/content.htm, downloads 與 images
+
+
+To remove a submodule you need to:
+
+    1. Delete the relevant section from the .gitmodules file.
+    
+        假如只有一個子模組, 可直接刪除 .gitmodules, 若有一個以上的子模組, 則只能刪除 .gitmodules 中的其中要刪除的三行子模組資料.
+    
+    2. Stage (上台表示要開始 tracking 檔案改版內容) the .gitmodules changes:
+    
+        git add .gitmodules
+        
+    3. Delete the relevant section from .git/config.
+    
+        直接從 .git/config 檔案中刪除兩行子模組資料
+        
+    4. Remove the submodule files from the working tree and index:
+    
+    git rm --cached path_to_submodule (no trailing slash).
+    
+    假設要刪除的子模組名稱為 w11_1a_no_good:
+    
+    git rm --cached w11_1a_no_good
+    
+    5. Remove the submodule's .git directory:
+    
+    rm -rf .git/modules/path_to_submodule
+    
+    直接利用滑鼠刪除 .git/modules/w11_1a_no_good 目錄
+    
+    6. Commit the changes:
+    
+    提交前面步驟所做的內容改版
+    
+    git commit -m "Removed submodule <name>"
+    
+    例如:
+    
+    git commit -m "removed w11_1a_no_good dir"
+    
+    7. Delete the now untracked submodule files:
+    
+    rm -rf path_to_submodule
+    
+    直接利用滑鼠刪除 w11_1a_no_good 目錄
+    
+    8. acp "delete w11_1a_no_good submodule"
+    
+    23%4 表示求 23/4 的餘數
+    
+    8**2  表示 8 的 2 次方
+    
+    type(a) 表示 a 變數的型別
+    
+>>> a = 1
+>>> type(a)
+<class 'int'>
+
+class 表示為類別
+int 表示為 integer 整數
+
+>>> b = 1.05
+>>> type(b)
+<class 'float'>
+
+float 表示為浮點數
+
+>>> import keyword
+>>> print(keyword.kwlist)
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+
+import keyword 表示導入 keyword 模組
+print(keyword.kwlist) 表示要列印出 keyword 模組的 kwlist 變數
+
+[]  代表 list 也就是數列的意思.
+
+[1, 2, 3, 4]
+
+>>> c = [1,2,3,4]
+>>> type(c)
+<class 'list'>
+
+>>> for i in c:
+...     print(i)
+... 按下 shift + enter 可以執行上列程式碼.
+1
+2
+3
+4
+>>>
+
+如何新增一個 ex1 button
+
+html ex1 button 內容:
+
+<button id="ex1">ex1</button>
+
+Brython 程式區:
+
+################### ex1 start
+ex1_url = "https://gist.githubusercontent.com/mdecourse/2f56974a40da7a218dbaef376a5b4ca4/raw/bcfdc529988b3645fbaba7a3cc34a9bd4a46b64e/w12_1a_ex1.py"
+ex1 = button2(ex1_url)
+doc["ex1"].bind("click", ex1.do)
+################### ex1 end
+
