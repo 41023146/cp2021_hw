@@ -51,7 +51,22 @@ start /MIN %Disk%:\wScite\SciTE.exe
 start /MIN %Disk%:\wScite\SciTE.exe
 
 Exit</pre>
-<p><br/><br/>Hybrid</p><h1>HW1</h1>
+<p><br/><br/>Hybrid</p>
+<h2>ssh push</h2>
+<p>1.下載<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">putty</a>.</p>
+<p>2.用PuTTY裡的puttygen.exe做一把金鑰</p>
+<p>(先按Generate然後滑鼠亂動一下)</p>
+<p>3.將key存到遠端github</p>
+<p>(帳號頭象下Settings裡的SSH and GPG keys)</p>
+<p>4.回到<span>puttygen.exe案save private key(可以存到home_ipv4或6)</span></p>
+<p><span>5.然後開啟PuTTY裡的putty.exe,在hostname和saved sessions欄位都填入github.com(先save),</span></p>
+<p><span>然後將SSH裡的Auth指向你存的金鑰(再save)</span></p>
+<p>6.按一下open</p>
+<p>7.將倉儲裡的.git裡的config用編譯器打開,將[remote "origin"]</p>
+<p>改成 url = <a href="mailto:git@github.com:(自己帳號)/cp2021_hw.git">git@github.com:(自己帳號)/cp2021_hw.git</a></p>
+<p>8.記得確認start_ipv4.bat裡有set GIT_SSH=%Disk%:\PuTTY\plink.exe</p>
+<p><span></span></p>
+<p><span></span></p><h1>HW1</h1>
 <p>HW1 - 網際動畫與 touch typing 佔學期成績 20%.</p>
 <p><span style="background-color: #ffff99;">HW1 必須在 2021.10.20 22:00 之前完成</span>.</p>
 <p><a href="https://github.com/mdecourse/cp2021/discussions/8">HW1 具體項目成果回報區</a>將於 2021.09.23 開啟, 於 <span style="background-color: #ff99cc;">2021.10.20 22:00 關閉</span></p>
