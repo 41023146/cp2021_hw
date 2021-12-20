@@ -473,7 +473,7 @@ check_input()
 <p style="padding-left: 30px;"><a href="https://shaform.com/csdream/docs/problem-solving/">https://shaform.com/csdream/docs/problem-solving/</a></p>
 <p style="padding-left: 30px;"><a href="https://onlinejudge.org/">https://onlinejudge.org/</a></p>
 <p style="padding-left: 30px;"></p>
-<h3>Examples run</h3>
+<h2>W11</h2>
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
 <!-- for ggame -->
@@ -582,15 +582,24 @@ print("Python keywords: ", keyword.kwlist)
 # id 為 "keyword" 的按鈕點按時, 執行 kw1 物件中的 prog 方法
 </script>
 </p>
+<p></p>
 <script type="text/python3">
 import beditor
 from browser import document
 url = "https://gist.githubusercontent.com/41023146/805ab4c406844c0c3a2d580b1c27536d/raw/de2ae36b6254313de738312f4bf99eeb475fb68d/Python"
 src = open(url).read()
-w10 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["w10"].bind("click", w10.prog)
+w11 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11"].bind("click", w11.prog)
 </script>
-<p><button id="w10">2.6_1</button></p><h2>snake t1</h2>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/7247096f2bc3c18337b5d8b474b85a57/raw/4493388917baea5f328cbe510c2a5fb5d9be7ac6/Python"
+src = open(url).read()
+w11_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_1"].bind("click", w11_1.prog)
+</script>
+<p><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button></p><h2>snake t1</h2>
 <!-- 導入 brython 程式庫 -->
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>

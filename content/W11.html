@@ -2,7 +2,7 @@
         <head>
         <title>cp2021 homework site</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -128,7 +128,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Git.html'>Git</a><ul class='dropdown'><li><a href='git 指令.html'>git 指令</a><li><a href='git push.html'>git push</a></li></ul><li><a href='tokens.html'>tokens</a><li><a href='ssh push.html'>ssh push</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='w13.html'>w13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li class='has-children'><a href='作業倉儲網站.html'>作業倉儲網站</a><ul class='dropdown'><li><a href='problem.html'>problem</a></li></li></ul></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li class='has-children'><a href='Examples.html'>Examples</a><ul class='dropdown'><li><a href='Examples run.html'>Examples run</a></li></ul><li><a href='snake t1.html'>snake t1</a></li></ul><li><a href='progress rate.html'>progress rate</a><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run.html'>run</a><li><a href='game.html'>game</a></li>
+                     <li class='has-children'><a href='About.html'>About</a><ul class='dropdown'><li class='has-children'><a href='Git.html'>Git</a><ul class='dropdown'><li><a href='git 指令.html'>git 指令</a><li><a href='git push.html'>git push</a></li></ul><li><a href='tokens.html'>tokens</a><li><a href='ssh push.html'>ssh push</a></li></ul><li class='has-children'><a href='Exam.html'>Exam</a><ul class='dropdown'><li><a href='w13.html'>w13</a></li></ul><li><a href='HW1.html'>HW1</a><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li class='has-children'><a href='作業倉儲網站.html'>作業倉儲網站</a><ul class='dropdown'><li><a href='problem.html'>problem</a></li></li></ul></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Examples.html'>Examples</a><li><a href='W11.html'>W11</a><li><a href='snake t1.html'>snake t1</a></li></ul><li><a href='progress rate.html'>progress rate</a><li class='has-children'><a href='Final Project.html'>Final Project</a><ul class='dropdown'><li><a href='run.html'>run</a><li><a href='game.html'>game</a></li>
                       </ul>
                 </nav>
               </div>
@@ -139,7 +139,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Examples << <a href='Examples.html'>Previous</a> <a href='snake t1.html'>Next</a> >> snake t1<br /><h1>Examples run</h1>
+    <div id="tipue_search_content">Examples << <a href='Examples.html'>Previous</a> <a href='snake t1.html'>Next</a> >> snake t1<br /><h1>W11</h1>
 <script src="./../cmsimde/static/brython.js"></script>
 <script src="./../cmsimde/static/brython_stdlib.js"></script>
 <!-- for ggame -->
@@ -248,15 +248,24 @@ print("Python keywords: ", keyword.kwlist)
 # id 為 "keyword" 的按鈕點按時, 執行 kw1 物件中的 prog 方法
 </script>
 </p>
+<p></p>
 <script type="text/python3">
 import beditor
 from browser import document
 url = "https://gist.githubusercontent.com/41023146/805ab4c406844c0c3a2d580b1c27536d/raw/de2ae36b6254313de738312f4bf99eeb475fb68d/Python"
 src = open(url).read()
-w10 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["w10"].bind("click", w10.prog)
+w11 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11"].bind("click", w11.prog)
 </script>
-<p><button id="w10">2.6_1</button></p><br />Examples << <a href='Examples.html'>Previous</a> <a href='snake t1.html'>Next</a> >> snake t1</div>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/7247096f2bc3c18337b5d8b474b85a57/raw/4493388917baea5f328cbe510c2a5fb5d9be7ac6/Python"
+src = open(url).read()
+w11_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_1"].bind("click", w11_1.prog)
+</script>
+<p><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button></p><br />Examples << <a href='Examples.html'>Previous</a> <a href='snake t1.html'>Next</a> >> snake t1</div>
         
     <!-- footer -->
       <div class="container">
