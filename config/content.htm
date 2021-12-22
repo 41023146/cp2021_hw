@@ -585,6 +585,14 @@ print("Python keywords: ", keyword.kwlist)
 <script type="text/python3">
 import beditor
 from browser import document
+url = "https://gist.githubusercontent.com/41023146/7430e7cd08724dbd831408fb8ead0f8d/raw/b1ad74f56764adbcfa54b95700d21d98a4e17307/a%25E5%258A%25A0%25E5%2588%25B0b"
+src = open(url).read()
+w11_0 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_0"].bind("click", w11_0.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
 url = "https://gist.githubusercontent.com/41023146/805ab4c406844c0c3a2d580b1c27536d/raw/de2ae36b6254313de738312f4bf99eeb475fb68d/Python"
 src = open(url).read()
 w11 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
@@ -606,7 +614,7 @@ src = open(url).read()
 w11_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w11_2"].bind("click", w11_2.prog)
 </script>
-<p><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button></p><h2>snake</h2>
+<p><button id="w11_0">1加到100</button><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button></p><h2>snake</h2>
 <p>1.蛇自動去尋找莓果(v)</p>
 <p>                                ...........*無法將1.2.組合(蛇吃到莓果不會再生成一顆)</p>
 <p>2.莓果隨機出現在畫布(v)</p>

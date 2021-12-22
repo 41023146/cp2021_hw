@@ -1,11 +1,10 @@
 <h1>About</h1>
 <p>這是計算機程式課程 2021 Fall 的作業倉儲與網站 template</p>
 <hr/>
-<p>41023146</p>
+<p>四設計一甲 41023146</p>
 <p>網站倉儲: <a href="https://github.com/41023146/cp2021_hw">https://github.com/41023146/cp2021_hw</a> </p>
 <p>網站連結: <a href="https://41023146.github.io/cp2021_hw/">https://41023146.github.io/cp2021_hw/</a>  </p>
-<p>其他與個人或作業相關資料說明或介紹</p>
-<h2>Git</h2>
+<p></p><h2>Git</h2>
 <p>推薦-&gt;<a href="https://w3c.hexschool.com/git/cfdbd310">Git &amp; GitHub 教學手冊</a></p>
 <p></p>
 <h3>git 指令</h3>
@@ -586,6 +585,14 @@ print("Python keywords: ", keyword.kwlist)
 <script type="text/python3">
 import beditor
 from browser import document
+url = "https://gist.githubusercontent.com/41023146/cdd1026309937ac3b15ba7ce8cbfe03f/raw/dbeb217a27b911d6c1dd5ec3f331b1c7a4a81112/Python"
+src = open(url).read()
+w11_0 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_0"].bind("click", w11_0.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
 url = "https://gist.githubusercontent.com/41023146/805ab4c406844c0c3a2d580b1c27536d/raw/de2ae36b6254313de738312f4bf99eeb475fb68d/Python"
 src = open(url).read()
 w11 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
@@ -607,7 +614,7 @@ src = open(url).read()
 w11_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w11_2"].bind("click", w11_2.prog)
 </script>
-<p><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button></p><h2>snake</h2>
+<p><button id="w11_0">1加到100</button><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button></p><h2>snake</h2>
 <p>1.蛇自動去尋找莓果(v)</p>
 <p>                                ...........*無法將1.2.組合(蛇吃到莓果不會再生成一顆)</p>
 <p>2.莓果隨機出現在畫布(v)</p>
