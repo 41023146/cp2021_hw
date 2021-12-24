@@ -623,7 +623,12 @@ w11_3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_s
 document["w11_3"].bind("click", w11_3.prog)
 </script>
 <p><button id="w11_0">1加到100</button><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button><button id="w11_3">2.6_3plus</button></p>
-<h3>problem1</h3><h2>snake</h2>
+<h3>problem1</h3>
+<p><strong>import math</strong></p>
+<p><strong>import sympy </strong></p>
+<p><strong>x = sympy.symbols("x")</strong><br/><strong>def f(a):</strong><br/><strong> return math.sin(a)</strong><br/><strong>def t(x):</strong><br/><strong> return math.exp(-x)</strong><br/> <br/><strong>print (sympy.solve(math.exp(-x)*0.8 - f(x),x))</strong><br/><br/></p>
+<p>1.python教科書的4-3 Exercises 第一題</p>
+<p>自然對數e和sin函數可以用math 模組解決,但方程式和未知數的模組導入都會出現錯誤</p><h2>snake</h2>
 <p>1.蛇自動去尋找莓果(v)</p>
 <p>                                ...........*無法將1.2.組合(蛇吃到莓果不會再生成一顆)</p>
 <p>2.莓果隨機出現在畫布(v)</p>

@@ -1058,7 +1058,15 @@ src = open(url).read()
 w13_4 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w13_4"].bind("click", w13_4.prog)
 </script>
-<p><button id="keyword">Keyword</button><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button><button id="a_to_b">a_to_b</button><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button></p><h3>runsrc</h3>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/e3e9cfdea42eb4cffd968ffe410153fd/raw/33b0593ac0b11f45cdb72a4c459cdfbf4995d3c9/Python"
+src = open(url).read()
+w14 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w14"].bind("click", w14.prog)
+</script>
+<p><button id="keyword">Keyword</button><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button><button id="a_to_b">a_to_b</button><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button><button id="w14">簡易計算機</button></p><h3>runsrc</h3>
 <p></p>
 <p>(<a href="https://raw.githubusercontent.com/41023146/cp2021_hw/main/downloads/run.txt">run.txt</a>)</p><h2>game</h2>
 <!-- 導入 brython 程式庫 -->
