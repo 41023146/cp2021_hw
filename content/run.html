@@ -329,7 +329,15 @@ src = open(url).read()
 w14 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w14"].bind("click", w14.prog)
 </script>
-<p><button id="keyword">Keyword</button><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button><button id="a_to_b">a_to_b</button><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button><button id="w14">簡易計算機</button></p><br />Final Project << <a href='Final Project.html'>Previous</a> <a href='runsrc.html'>Next</a> >> runsrc</div>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/5fdbfdecc23d31559952df0e905c4392/raw/7ee9de5468d26f8e77c944c0db83d5e971123cd8/Python"
+src = open(url).read()
+w14_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w14_1"].bind("click", w14_1.prog)
+</script>
+<p><button id="keyword">Keyword</button><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button><button id="a_to_b">a_to_b</button><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button><button id="w14">簡易計算機</button><button id="w14_1">猜數字遊戲</button></p><br />Final Project << <a href='Final Project.html'>Previous</a> <a href='runsrc.html'>Next</a> >> runsrc</div>
         
     <!-- footer -->
       <div class="container">
