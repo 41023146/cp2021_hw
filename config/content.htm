@@ -1509,13 +1509,18 @@ browser.timer.set_interval(game, 1000/15)
 <script>
 ###############################################
 </script>
-<p><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button><button id="a_to_b">a_to_b</button><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button><button id="w14">簡易計算機</button><button id="w14_1">猜數字遊戲</button></p>
+<p><button id="hw1_1">hw1_1</button><button id="hw1_2">hw1_2</button></p>
+<p><button id="w13">w13</button><button id="w13_2">畫表格</button><button id="w13_3">隨機生成方格</button><button id="w13_4">隨機生成方格plus</button></p>
+<p><button id="w11_0">1加到100</button><button id="w11">2.6_1</button><button id="w11_1">2.6_2</button><button id="w11_2">2.6_3</button><button id="w11_3">2.6_3plus</button></p>
+<p><button id="貪食蛇">snake</button><button id="ai_snake">ai_snake</button></p>
+<p><button id="w14">簡易計算機</button><button id="w14_1">猜數字遊戲</button></p>
+<p>
 <script>
 ###############################################
 </script>
 <script src="/static/brython.js"></script>
 <script src="/static/brython_stdlib.js"></script>
-<!-- for ggame -->
+<!-- for ggame --></p>
 <p>
 <script src="/static/jquery-3.3.1.min.js"></script>
 <script src="/static/jquery-ui.1.12.1.min.js"></script>
@@ -1524,14 +1529,14 @@ browser.timer.set_interval(game, 1000/15)
 <script src="/static/bs.js"></script>
 <script src="/downloads/brython_modules.js"></script>
 </p>
-<!-- Cango 程式庫 -->
+<p><!-- Cango 程式庫 --></p>
 <p>
 <script src="/static/Cango-24v03-min.js"></script>
 <script src="/static/CangoAxes-6v01-min.js"></script>
 <script src="/static/gearUtils-09.js"></script>
 <script src="/static/SVGpathUtils-6v03-min.js"></script>
 </p>
-<!-- for Konva 程式庫 -->
+<p><!-- for Konva 程式庫 --></p>
 <p>
 <script src="/static/konva.min.js"></script>
 <script>
@@ -1642,14 +1647,6 @@ document["ai_snake"].bind("click", ai_snake.prog)
 <script type="text/python3">
 import beditor
 from browser import document
-url = "https://gist.githubusercontent.com/41023146/7430e7cd08724dbd831408fb8ead0f8d/raw/e06d0bedd22d0b5c74cfe8fc04d02f9fbd468ad5/a%25E5%258A%25A0%25E5%2588%25B0b"
-src = open(url).read()
-a_to_b = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
-document["a_to_b"].bind("click", a_to_b.prog)
-</script>
-<script type="text/python3">
-import beditor
-from browser import document
 url = "https://gist.githubusercontent.com/41023146/8d18ed1cdd15e4668b7c6c60e73f67bf/raw/b7a10cf0dc9f31d3058c023e833c378012bfe1c1/w13"
 src = open(url).read()
 w13 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
@@ -1695,7 +1692,47 @@ src = open(url).read()
 w14_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["w14_1"].bind("click", w14_1.prog)
 </script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/7430e7cd08724dbd831408fb8ead0f8d/raw/b1ad74f56764adbcfa54b95700d21d98a4e17307/a%25E5%258A%25A0%25E5%2588%25B0b"
+src = open(url).read()
+w11_0 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_0"].bind("click", w11_0.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/805ab4c406844c0c3a2d580b1c27536d/raw/de2ae36b6254313de738312f4bf99eeb475fb68d/Python"
+src = open(url).read()
+w11 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11"].bind("click", w11.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/7247096f2bc3c18337b5d8b474b85a57/raw/4493388917baea5f328cbe510c2a5fb5d9be7ac6/Python"
+src = open(url).read()
+w11_1 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_1"].bind("click", w11_1.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/cdd1026309937ac3b15ba7ce8cbfe03f/raw/dbeb217a27b911d6c1dd5ec3f331b1c7a4a81112/Python"
+src = open(url).read()
+w11_2 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_2"].bind("click", w11_2.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/8ced0a5bab9bee8205caeac6753542c7/raw/c2fa894204e936ffdef86988ecc36a8d4765cf38/Python"
+src = open(url).read()
+w11_3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w11_3"].bind("click", w11_3.prog)
+</script>
 <script>
-###############################################
+############################################### // ]]&gt;</p>
 </script>
 </p>
