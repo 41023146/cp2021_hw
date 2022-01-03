@@ -1116,7 +1116,7 @@ run()
 <p>  =&gt;發現是GitEtensions設定中指定使用ssh客戶端選擇了OpenSSH,而沒有選擇PuTTY</p>
 <p><strong>week 10</strong></p>
 <p>1.學習如何用Python的for迴圈寫1連加到10的程式,並加入run頁面的按鈕</p>
-<p>2.嘗試將倉儲push到Gitlab(失敗)</p>
+<p>2.嘗試將倉儲push到Gitlab(失敗)(week15 <span>已解決)</span></p>
 <p><strong>week 11</strong></p>
 <p>1.嘗試從頭建立新倉儲和動態網站</p>
 <p><strong>week 12</strong></p>
@@ -1129,7 +1129,11 @@ run()
 <p>1.和同學嘗試寫程式,像是:簡易計算機,猜數字遊戲,並添加至run頁面</p>
 <p>2.完成python教科書2_6的三個例題</p>
 <p>3.從頭製作ai snake程式,並統整問題</p>
-<p>4.將老師貪食蛇改為有啟動和加減速功能</p><h1>Final Project</h1>
+<p>4.將老師貪食蛇改為有啟動和加減速功能</p>
+<p><strong>week 15</strong></p>
+<p>1.學會pull requests和如何用反向<span>pull requests將原倉儲更新拉回</span></p>
+<p><span>2.將github的cp2021_hw倉儲備份到gitlab(week10問題已解決)</span></p>
+<p><span>3.開始整理並製作本課程期末報告</span></p><h1>Final Project</h1>
 <p>Final Project 佔學期成績 30%</p>
 <p><span style="background-color: #ffff99;">Final Project 必須在 2022.01.05 22:00 之前完成</span>.</p>
 <p><a href="https://github.com/mdecourse/cp2021/discussions/11">Final Project 具體項目成果回報區</a>將於 2021.11.09 開啟, 於 <span style="background-color: #ff99cc;">2022.01.05 22:00 關閉</span></p>
@@ -1611,7 +1615,19 @@ doc['clear_bd'].bind('click', clear_bd)
 <form><label>Filename: <input id="kw_filename" placeholder="input file name" type="text"/>.py</label> <input onclick="doSave('kw_py_src', 'kw_filename');" type="submit" value="Save"/></form>
 <p><button id="kw_run">Run</button> <button id="kw_show_console">Output</button> <button id="kw_clear_console">清除輸出區</button><button id="clear_bd">清除繪圖區</button><button onclick="window.location.reload()">Reload</button></p>
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console"></textarea></div>
-<div id="brython_div"></div>
+<div style="width: 100%; height: 100%;"></div>
+<div id="brython_div"> </div>
+<div>================================================================= </div>
+<div>                                                                                                                 </div>
+<div>1.關於hw1的紅色方塊,是我第一次接觸python,一開始什麼都看不懂,到後來才發現是用browser.timer這個模組配合if迴圈使函式隔一段時間執行一次產生移動的效果,還有將方塊著做成有啟動和暫停按鈕,我一開始因為不熟悉課程網站沒找到Cango裡的fourbar按鈕,所以我在網上查了很多python的資料,雖然那些資料沒讓我做出按鈕,但也讓我學到很多(最後還是找到fourbar按鈕才學會的)。</div>
+<div>                                                                                                                                               </div>
+<div>2.在w13的測驗中我學會了random的用法並完成延伸,我發現如果延伸中的數字改成方塊是不是可以做成貪食蛇中那個隨機生成的莓果,然後我就再延伸了兩個按鈕出來。</div>
+<div>                                                                                                                                               .</div>
+<div>3.在第十二周的時候用cmd啟動python來熟悉python的基本運算,並在之後完成了pthon教科書2_6的習題並做成按鈕。</div>
+<div>                                                                                                                                               .</div>
+<div>4.作業三一開始我不知道是要從頭做一隻貪食蛇還是改編老師的貪食蛇,所以我就從頭開始做,一開始是從作業一的方塊開始改,第一個完成的是sanke_t1這隻只有頭且只能吃一次方塊的蛇,然後我用w13延伸做出了貪食蛇的莓果snake_berry,最後將這兩個融合成snake_t2,然後我看到學長交的作業是改編老師的貪食蛇,所以我又做了ai_sanke,最後我看到同學在貪食蛇上加按鈕,然後我就結合老師snake和Bsnake的按鈕做了一個Bsnake。</div>
+<div>                                                                                                                                               .</div>
+<div>5.簡易計算機和猜數字遊戲是我和<a href="https://github.com/41023121/cp2021_hw">41023121</a>同學一起完成的,在製作的過程中第一次用到input這個東西,發現它可以用來輸入東西去與程式裡的東西氣比較和判斷。</div>
 <div class="col-md-0" height="1" id="graphics-column" width="1"></div>
 <p><!-- ****************************** keyword start -->
 <script>
