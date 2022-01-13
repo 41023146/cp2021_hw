@@ -156,7 +156,7 @@ img.add_border {
 <p>6.期末測驗</p>
 <p><button id="final_1">final_1</button><button id="final_2">final_2</button></p>
 <p>7.期末考試</p>
-<p><button id="final_3">final_3</button></p>
+<p><button id="final_3">final3</button><button id="w17_5">final3_2</button></p>
 <script>
 ###############################################
 </script>
@@ -463,6 +463,14 @@ url = "https://gist.githubusercontent.com/41023146/4814bb3856a31f5ad0d303f21cd93
 src = open(url).read()
 final_3 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
 document["final_3"].bind("click", final_3.prog)
+</script>
+<script type="text/python3">
+import beditor
+from browser import document
+url = "https://gist.githubusercontent.com/41023146/7c6cc702a1534f01a909e2c3e06d1cca/raw/6bb10593d501c0abecc54bdaf420bf30c26a7510/Python"
+src = open(url).read()
+w17_5 = beditor.editor(src, "kw_editor", "kw_console", "kw__container", "kw_py_src")
+document["w17_5"].bind("click", w17_5.prog)
 </script>
 <script>
 ############################################### // ]]&gt;</p>
